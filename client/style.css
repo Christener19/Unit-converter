@@ -6,26 +6,46 @@
     --unitBg: #273549;
     --unitTxt: #CCC1FF;
 }
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
 
 body {
     margin: 0;
     padding: 0;
-    background-color: var(--darkPurple);
+    background-color: whitesmoke;
     text-align: center;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
-
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main-container {
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
 .first-half {
     background-color: var(--purple);
-    height: 250px;
+    height: 300px;
     width: 100%;
     color: white;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    border-radius: 5px;
 }
 .first-half > h1 {
     margin-top: 0;
+    padding: 10px 15px;
 }
 .number-to-convert {
 text-align: center;
@@ -36,6 +56,7 @@ background-color: var(--purple);
 margin-bottom: 25px;
 color: #FFF;
 font-size: 35px;
+;
 }
 .conversion-btn {
     color: var(--btnText);
@@ -43,23 +64,29 @@ font-size: 35px;
     background-color: #FFF;
     padding: 9px 25px;
     border: none;
+    /* font-size: 15px; */
+    font-weight: 800;
 }
 
 .second-half {
     width: 100%;
-    height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    background-color: var(--darkPurple);
+    border-radius: 5px;
 }
 
 .unit-container {
     text-align: center;
     background-color: var(--unitBg);
-    width: 70vw;
+    width: 70%;
     margin-top: 15px;
     padding: 0 10px;
+}
+.last-unit {
+    margin-bottom: 15px;
 }
 .unit-title {
     color: var(--unitTxt);
@@ -68,8 +95,20 @@ font-size: 35px;
     color: #FFF;
 }
 
-@media (min-width: 100px) and (max-width: 500px) {
+@media (min-width: 100px) and (max-width: 600px) {
+    body {
+        background-color: var(--darkPurple);
+    }
+    .main-container {
+        height: auto;
+    }
+    .first-half {
+        width: 100vw;
+    }
+    .second-half {
+        width: 100vw;
+    }
     .first-half > h1 {
-        font-size: 20px;
+        font-size: 25px;
     }
 }
