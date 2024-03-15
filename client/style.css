@@ -67,6 +67,10 @@ font-size: 35px;
     /* font-size: 15px; */
     font-weight: 800;
 }
+.conversion-btn:hover {
+    background-color: #3c2d64;
+    color: #FFF;
+}
 
 .second-half {
     width: 100%;
@@ -84,12 +88,10 @@ font-size: 35px;
     width: 70%;
     margin-top: 15px;
     padding: 0 10px;
+    color: var(--unitTxt);
 }
 .last-unit {
     margin-bottom: 15px;
-}
-.unit-title {
-    color: var(--unitTxt);
 }
 .text-conversion {
     color: #FFF;
