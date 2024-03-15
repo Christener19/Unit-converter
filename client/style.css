@@ -11,6 +11,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: var(--darkPurple);
+    text-align: center;
 }
 
 .first-half {
@@ -54,17 +55,21 @@ font-size: 35px;
 }
 
 .unit-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    text-align: center;
     background-color: var(--unitBg);
     width: 70vw;
     margin-top: 15px;
+    padding: 0 10px;
 }
 .unit-title {
     color: var(--unitTxt);
 }
 .text-conversion {
     color: #FFF;
+}
+
+@media (min-width: 100px) and (max-width: 500px) {
+    .first-half > h1 {
+        font-size: 20px;
+    }
 }
